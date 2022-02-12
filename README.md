@@ -13,7 +13,7 @@
 
 ### To run as desktop app (dev mode):
 
-- Run `cd myfirstbriefcaseapp`
+- Run `cd myFirstPythonAppOnAndroid`
 - Run `virtualenv .environment`
 - Run `source .environment/bin/activate`
 - Run `.environment/bin/python -m pip install briefcase`
@@ -23,7 +23,7 @@
 
 ### To run in **Android**
 
-- Run `cd myfirstbriefcaseapp`
+- Run `cd myFirstPythonAppOnAndroid`
 - Run `export JAVA_HOME=/usr/local/opt/openjdk`
 - Run `briefcase create android`
 - Run `briefcase build android`
