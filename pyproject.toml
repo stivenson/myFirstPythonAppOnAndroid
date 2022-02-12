@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "My First Briefcase App"
+bundle = "com.stivenson"
+version = "0.0.1"
+url = "https://github.com/stivenson/myfirstbriefcaseapp"
+license = "MIT license"
+author = 'Stivenson Rincon'
+author_email = "stivenson.rpm@gmail.com"
+
+[tool.briefcase.app.myfirstbriefcaseapp]
+formal_name = "My First Briefcase App"
+description = "My first application"
+icon = "src/myfirstbriefcaseapp/resources/myfirstbriefcaseapp"
+sources = ['src/myfirstbriefcaseapp']
+requires = []
+
+
+[tool.briefcase.app.myfirstbriefcaseapp.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.myfirstbriefcaseapp.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.myfirstbriefcaseapp.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.myfirstbriefcaseapp.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.myfirstbriefcaseapp.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
